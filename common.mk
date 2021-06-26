@@ -17,10 +17,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# ANT+
-PRODUCT_PACKAGES += \
-    com.dsi.ant@1.0.vendor
-
 # Apex
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -92,14 +88,12 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    libbluetooth_audio_session \
     libbthost_if \
     BluetoothQti
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -420,9 +414,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac \
-    libwfdaac_vendor
+    libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

@@ -68,6 +68,7 @@ vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -153,6 +154,8 @@ vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
 vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/MIUI_Time.ttf
+vendor/etc/camera/mibokeh_712_opencl.bin
+vendor/etc/camera/mibokeh_712_parameter.bin
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sceneDetection.xml
@@ -391,8 +394,6 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxml2_vendor.so
-vendor/lib64/mibokeh_712_opencl.bin
-vendor/lib64/mibokeh_712_parameter.bin
 
 # Camera (Megvii)
 vendor/etc/camera/megviifacepp_0_5_2_model
@@ -644,27 +645,25 @@ vendor/etc/SVIConfig.xml
 vendor/lib/libdisp-aba.so
 vendor/lib/libdisplayqos.so
 vendor/lib/libhdr_tm.so
+vendor/lib/libqseed3.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-colormgr-algo.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libhdr_tm.so
-
-# Graphics (SDM) - from NX627J RKQ1.200826.002
-vendor/lib/libqseed3.so|3d54259d2b90b6193ff4b2565ad82b15a31b42af
-vendor/lib/libsdedrm.so|abb87737f0833482c77134c7cd5991f20b106a20
-vendor/lib/libsdm-color.so|f83bb292a60dba8ff3b8efc643a0494e556a40c1
-vendor/lib/libsdm-colormgr-algo.so|ff4d2727b6a89d405729c17cd5a565dd5a2b614d
-vendor/lib/libsdm-diag.so|5cd1fa74b3bed8039ac82faecff59ed31231d1c1
-vendor/lib/libsdm-disp-vndapis.so|951ad465af2faece2d79ecf7a2ea60bb676505c6
-vendor/lib/libsdmextension.so|51957aaf2e9481fa8aeb102ea654b33a07a204c0
-vendor/lib/libtinyxml2_1.so|73f7b6a9aa52ac469c01d60d72219d2d0f4b11e1
-vendor/lib64/libqseed3.so|a449d79b912415f542509874b43338b27795a1c3
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
-vendor/lib64/libsdm-color.so|b2bcf2c205b501024407ed5c216d2b290688bd64
-vendor/lib64/libsdm-colormgr-algo.so|6d17546d7822803700dc21968f75069d1b7392b1
-vendor/lib64/libsdm-diag.so|3d5c311d7d5d842e5a75e9ae3f9f70ceb00cd1cf
-vendor/lib64/libsdm-disp-vndapis.so|42f536763a2f91dcbae5b4b7214e652283c389d6
-vendor/lib64/libsdmextension.so|0aed8ab6ecf878ae57ecba4b8a9bfb0d184ab5f7
-vendor/lib64/libtinyxml2_1.so|621dbc8e3d0529b9ee35393698de82ea006ca7fa
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
 
 # Graphics firmware
 vendor/firmware/a615_zap.b00
@@ -1387,9 +1386,6 @@ vendor/firmware/Drv2624Date.ini
 # WiFi
 vendor/bin/cnss-daemon
 
-#wfd hack
-vendor/lib64/libdisplayconfig.so:priv-app/WfdService/lib/arm64/libdisplayconfig.so
-
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/rtspclient
@@ -1409,7 +1405,7 @@ system_ext/lib/libwfdavenhancements.so
 system_ext/lib/libwfdclient.so
 system_ext/lib/libwfdcommonutils.so
 system_ext/lib/libwfdconfigutils.so
-system_ext/lib/libwfddisplayconfig.so|f820d710151f2128422cd759891ff466b101844c
+system_ext/lib/libwfddisplayconfig.so
 system_ext/lib/libwfdmminterface.so
 system_ext/lib/libwfdmmsink.so
 system_ext/lib/libwfdmmsrc_system.so
@@ -1431,7 +1427,7 @@ system_ext/lib64/libmmrtpencoder.so
 system_ext/lib64/libwfdclient.so
 system_ext/lib64/libwfdcommonutils.so
 system_ext/lib64/libwfdconfigutils.so
-system_ext/lib64/libwfddisplayconfig.so|8d98d7ed260434d67167e4c0e427bf1e851e66f4
+system_ext/lib64/libwfddisplayconfig.so
 system_ext/lib64/libwfdmminterface.so
 system_ext/lib64/libwfdmmsink.so
 system_ext/lib64/libwfdnative.so
